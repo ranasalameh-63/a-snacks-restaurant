@@ -26,6 +26,26 @@ else {
     window.alert("Invalid response. Please enter 'yes' or 'no'.");
 }
 console.log("Done"+ ""+userName +"Your order is"+"" +userChoice)
+/////Ex3
+let userData = [];
+userData.push(userName,userGender,userChoice);
+for(let i = 0; i <userData.length ; i++){
+    console.log(userData)
+}
+/////part 2
+function getUserGender(userName){
+    let userGender = prompt("Enter your Gender");
+
+if (userGender === 'Female' || userGender === 'female') {
+    window.alert("Welcome Ms " + userName);
+} else if (userGender === 'Male' || userGender === 'male') {
+    window.alert("Welcome Mr " + userName);
+} else {
+    window.alert("Welcome " + userName);
+}
+    return userGender
+}
+console.log(getUserGender(userGender)) ;
 
 //Q2
 
