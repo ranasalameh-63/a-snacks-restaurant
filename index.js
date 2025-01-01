@@ -81,28 +81,5 @@ switch (number) {
     default:
         console.log("PLEASE TRY AGAIN");
 }
-////////////// Part 1/////////////////
-let par1 =document.createElement('p');
-let par = document.createElement('p');
-let ol = document.createElement('ol')
-let Gender = document.createElement('li');
-let age = document.createElement('li');
-let order = document.createElement('li');
-//////data
-par1.textContent = "Welcome to Snack restaurant, the ultimate destination for snack lovers! ";
-par.textContent = userName;
-Gender.textContent =userGender;
-age.textContent = userAge;
-order.textContent = userChoice;
 
-//// call div
-let div = document.getElementById('hero');
-
-
-//////append
-div.appendChild(par);
-par.append(ol);
-ol.append(Gender);
-ol.appendChild(age);
-ol.appendChild(order);
 
